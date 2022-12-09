@@ -34,8 +34,8 @@ public class CalculatorTest {
 	@Test
 	public void Should_throw_an_arithmetic_exeption_if_denominator_is_zero()
 	{
-//		Exception e = new ArithmeticException("ZeroDivisionError");
-		assertEquals(new ArithmeticException("ZeroDivisionError"),Calculator.divide(0,0));
+		Exception e = new ArithmeticException("ZeroDivisionError");
+		assertEquals(e,Calculator.divide(0,0));
 
 	}
 
