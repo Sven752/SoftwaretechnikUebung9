@@ -1,10 +1,11 @@
 package a1;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class TestCalculator2 {
+public class CalculatorTest {
 
 	@Test
 	public void Should_add_two_numbers_and_retrun_the_resulst()
@@ -33,8 +34,8 @@ class TestCalculator2 {
 	@Test
 	public void Should_throw_an_arithmetic_exeption_if_denominator_is_zero()
 	{
-		Exception e = new ArithmeticException("ZeroDivisionError");
-		assertEquals(e, Calculator.divide(2,0));
+//		Exception e = new ArithmeticException("ZeroDivisionError");
+		assertEquals(new ArithmeticException("ZeroDivisionError"),Calculator.divide(0,0));
 
 	}
 

@@ -15,7 +15,7 @@ public class Calculator {
 			return valueOne * valueTwo;
 		}
 
-		public static float divide(int numerator, int denominator) {
+		public static float divide(int numerator, int denominator) throws ArithmeticException{
 			if (denominator == 0)
 				throw new ArithmeticException("ZeroDivisionError");
 
